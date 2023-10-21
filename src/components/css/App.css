@@ -1,0 +1,45 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+
+    /* background-color: bisque; */
+}
+
+.block {
+    width: auto;
+    min-width: 15em;
+}
+
+.block > * {
+    margin-bottom: 3%;
+}
+
+.map {
+    height: 50vh; 
+    width: 60vw;
+    background-color: rgba(252, 252, 254, 1);
+}
+
+@media (max-width: 729px) {
+    .content {
+        width: 100vw;
+        height: 100vh; /* makes scroll look good on small screen */
+        text-align: center;
+        /* background-color: bisque; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* horizontal */
+        align-items: center; /* vertical */
+    }
+}
