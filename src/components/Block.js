@@ -29,7 +29,7 @@ const Block = () => {
     // Fetching data from backend
     const [markerData, setMarkerData] = React.useState([])
     const fetchData = () => {
-        axios.get('http://127.0.0.1:5000/data',)
+        axios.get('http://127.0.0.1:8000/data',)
         .then(function (response) {
             setMarkerData(response.data)
             console.log(response.data)

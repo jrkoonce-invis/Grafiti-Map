@@ -4,6 +4,7 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 cors = CORS(app)  # Needed for CORS errors
+# app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 @app.route("/data", methods=["GET"])
@@ -28,4 +29,4 @@ def data():
 
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(port=8000)
